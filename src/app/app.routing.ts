@@ -3,8 +3,8 @@ import { MovieHomeComponent } from './movie-home/movie-home.component';
 
 export const AppRoutes: Routes = [
     {
-        path: 'movie-home',
-        redirectTo: 'dashboard',
+        path: '',
+        redirectTo: 'movie-home',
         pathMatch: 'full',
     },
     {

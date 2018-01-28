@@ -1,5 +1,5 @@
 import { Component, HostBinding } from '@angular/core';
-
+import * as $ from 'jquery';
 @Component({
     moduleId: module.id,
     selector: 'footer-cmp',

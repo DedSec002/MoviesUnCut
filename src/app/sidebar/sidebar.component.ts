@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var $:any;
+import * as $ from 'jquery';
 
 export interface RouteInfo {
     path: string;
@@ -10,14 +10,13 @@ export interface RouteInfo {
 }
 
 export const ROUTES: RouteInfo[] = [
-    { path: 'dashboard', title: 'Dashboard',  icon: 'ti-panel', class: '' },
-    { path: 'user', title: 'User Profile',  icon:'ti-user', class: '' },
-    { path: 'table', title: 'Table List',  icon:'ti-view-list-alt', class: '' },
-    { path: 'typography', title: 'Typography',  icon:'ti-text', class: '' },
-    { path: 'icons', title: 'Icons',  icon:'ti-pencil-alt2', class: '' },
-    { path: 'maps', title: 'Maps',  icon:'ti-map', class: '' },
-    { path: 'notifications', title: 'Notifications',  icon:'ti-bell', class: '' },
-    { path: 'upgrade', title: 'Upgrade to PRO',  icon:'ti-export', class: 'active-pro' },
+    { path: 'movie-home', title: 'Home',  icon: 'ti-panel', class: '' },
+    { path: 'genre', title: 'Genre',  icon: 'ti-user', class: '' },
+    { path: 'country', title: 'Country',  icon: 'ti-view-list-alt', class: '' },
+    { path: 'tv-series', title: 'TV-Series',  icon: 'ti-text', class: '' },
+    { path: 'top-imdb', title: 'Top IMDb',  icon: 'ti-pencil-alt2', class: '' },
+    { path: 'a-z-list', title: 'A-Z List',  icon: 'ti-map', class: '' },
+    { path: 'news', title: 'News',  icon: 'ti-bell', class: '' },
 ];
 
 @Component({
